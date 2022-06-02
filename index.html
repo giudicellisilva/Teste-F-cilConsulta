@@ -25,33 +25,27 @@
         <div class="content">
             <section class="section-formulario">
                 <div class="titles-form">
-                     <h1 class="title-form">Sobre o proficional</h1>
+                     <h1 class="title-form">Sobre o profissional</h1>
                      <h2 class="subtitle-form">Dados do Profissional</h2>
                 </div>
                 <form class="form">
-                    <label class="label-form"><h3>Nome completo* </h3><input class="input-form" type="text" name="nome" id="nome" placeholder="Digite o nome completo"></label>
+                    <label class="label-form"><h3>Nome completo* </h3><input class="input-form" type="text" data-ls-module="charCounter" minlength="3" maxlength="48" name="nome" id="nome" placeholder="Digite o nome completo"></label>
                     
-                    <label class="label-form"><h3>CPF*</h3> <input class="input-form" type="text" name="cpf" id="cpf" placeholder="Digite um cpf "></label>
+                    <label class="label-form"><h3>CPF*</h3> <input class="input-form" type="text" name="cpf" id="cpf" placeholder="Digite um CPF"></label>
                     
                     <label class="label-form"><h3>Numero de Celular*</h3> <input class="input-form" type="tel" name="celular" id="celular" placeholder="(00) 0 0000-0000"></label>
                          
                     <div class="div-div-form">
-                        <div class="div-form">
+                        <div class="div-form" id="div-estado">
                             <h3 class="label-form">Estado</h3> 
                             <select class="estado-form input-form" name="estado" id="estado">
                                 <option value="selecione">Selecione</option>
-                                <option value="pernanbuco">Pernanbuco</option>
-                                <option value="alagoas">Alagoas</option>
                             </select>
                         </div>
                         <div class="div-form">
                             <h3 class="label-form">Cidade*</h3>
-                            <select class="cidade-form input-form" name="cidade" id="cidade" placeholder="Selecione">
+                            <select class="cidade-form input-form" name="cidade" id="cidade">
                                 <option value="selecione">Selecione</option>
-                                <option style="display:none" class="pe" value="garanhus">Garanhus</option>
-                                <option style="display:none" class="pe" value="recife">Recife</option>
-                                <option style="display:none" class="al" value="penendo">Penedo</option>
-                                <option style="display:none" class="al" value="maceio">Maceio</option>
                             </select>
                         </div>
                         
@@ -76,11 +70,16 @@
                      <h2 class="subtitle-form">detalhes do atendimento</h2>
                 </div>
                  <form class="form">
-                    <label class="label-form">Especialidade principal* <input class="input-form" type="drop-down-list" name="especialidade" id="especialidade" placeholder="Selecione a especialidade"></label>
+                    <div class="div-form">
+                        <h3 class="label-form">Especialidade principal *</h3>
+                        <select class="cidade-form input-form" name="Especialidades" id="Especialidades">
+                            <option value="selecione">Selecione</option>
+                        </select>
+                    </div>
                     
                     <label class="label-form">Informe o preço da consulta* <div class="div-span-RS"><span class="span-RS">R$</span><input class="input-form" type="text" name="valor" id="valor" placeholder="Valor"></div></label>
 
-                    <label class="label-form">Formas de pagamento da consulta*
+                    <label class="label-form">Forma de pagamento da consulta*
                         <span class="span-pagamento"><input class="input-form" type="checkbox" name="pix" id="pix" >
                             <h4>Pix</h4>
                         </span>
@@ -146,7 +145,7 @@
                         <p class="input-dados">R$ 200,00</p>
                     </div>
                     <div class="">
-                        <h3 class="label-dados">Formas de pagamento da consulta</h3>
+                        <h3 class="label-dados">Forma de pagamento da consulta</h3>
                         <p class="input-dados">Cartão de crédito</p>
                     </div>
                  </div>
@@ -160,7 +159,7 @@
         </div>
         <div class="content content-cadastro-realizado" style="display: none;">
             <div class="cadastro-realizado">
-                <h3 class="cadastro-text">Cadastro concluido!</h3>
+                <h3 class="cadastro-text">Cadastro concluído!</h3>
                 <img class="img-checkd" src="imagens/checked-svgrepo-com.svg">
             </div>
         

@@ -1,24 +1,30 @@
-function Localizacao(config){
-    this.estado = (typeof config.estado === 'string') ? document.querySelector(config.estado) : config.estado;
-    this.estadoOption = (typeof config.estadoOption === 'string') ? document.querySelectorAll(config.estadoOption) : config.estadoOption;
-    this.cidadePe = (typeof config.cidadePe === 'string') ? document.querySelectorAll(config.cidadePe) : config.cidadePe;
-    this.cidadeAl = (typeof config.cidadeAl === 'string') ? document.querySelectorAll(config.cidadeAl) : config.cidadeAl;
-    _this = this;
+const urlEstado = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados';
+const cidade = document.getElementById('cidade');
+const estado = document.getElementById('estado');
 
-    _this.estado.addEventListener('change', mudaEstado);
-   function mudaEstado(){
-
-    for(let i=0; i < _this.estadoOption.length; i++){
+estado.addEventListener('change', async ()=>{
+    const urlCidades = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados/'+estado.value+'/municipios';
+    
+    const request = await fetch(urlCidades);
+    const response = await request.json();
+    
+    let option = '';
+    response.forEach(function(cidades){
+        cidade.innerHTML += '<option>'+cidades.nome+'</option>';
+    });
+})
+ 
+window.addEventListener('load', async ()=>{
+    const request = await fetch(urlEstado);
+    const response = await request.json();
         
-        if(_this.estado.value === 'pernanbuco'){
-            for(let j=0; j < _this.cidadePe.length; j++){
-                _this.cidadePe[j].removeAttribute('style');
-            }
-        }else if(_this.estado.value === 'alagoas'){
-            for(let j=0; j < _this.cidadeAl.length; j++){
-                _this.cidadeAl[j].removeAttribute('style');
-            }
-        }
-    } 
-   }
-}
+    response.forEach(function(uf){
+        estado.innerHTML += '<option value = '+uf.sigla+'>' + uf.nome + '</option>';
+            
+    });
+
+
+        
+});
+
+    
