@@ -1,0 +1,26 @@
+.label-dados{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.input-dados{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+
+/* Buttons */
+
+.button-cadastrar{
+    background-color: var(--CTA-0);
+    color: var(--secondary-7);
+
+}
+
+.button-editar{
+    background-color: var(--secondary-0);
+    color: var(--primary0);
+    font-size: 17px;
+    
+}

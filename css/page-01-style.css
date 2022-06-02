@@ -1,0 +1,11 @@
+#nome{
+    width: 400px;
+}
+
+#celular , #cpf{
+    width: 250px;
+}
+
+#estado, #cidade{
+    width: 150px;
+}

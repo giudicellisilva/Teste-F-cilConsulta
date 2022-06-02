@@ -1,0 +1,86 @@
+#especialidade{
+    width: 300px;
+}
+
+#valor{
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.div-span-RS{
+    display: flex;
+    align-items: center;
+}
+.span-RS{
+    padding: 5.5px;
+    background-color: var(--primary0);
+    color: var(--secondary-0);
+    font-size: 14px;
+    border-radius: 5px 0 0 5px ;
+}
+
+.span-pagamento{
+    width: 400px;
+    background-color: var(--secondary-3);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.span-pagamento input, .div-pagamento-cartao input{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.span-pagamento h4, .div-pagamento-cartao h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--secondary-7);
+    margin: 0;
+}
+
+.span-pagamento-cartao{
+    width: 400px;
+    background-color: var(--secondary-3);
+    border-radius: 5px;
+}
+
+.div-pagamento-cartao{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.div-pagamento-parcela{
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+}
+
+.div-pagamento-parcela .div-parcela-divisao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div-pagamento-parcela h4{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.div-pagamento-parcela .span-parcela-divisao{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.span-parcela-divisao input{
+    margin: 0;
+    cursor: pointer;
+}

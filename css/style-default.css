@@ -1,0 +1,44 @@
+*{
+    --primary0:#483698;
+
+    --CTA-1: #FFE766;
+    --CTA-0: #FBDE40;
+
+    --secondary-0: #FFFFFF;
+    --secondary-1: #F9F9F9;
+    --secondary-3: #B9B9B9;
+    --secondary-4: #8A8A8A;
+    --secondary-7: #282828;
+
+    --Danger: #DC3545;
+
+
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--CTA-0);
+}
+
+.main{
+    max-width: 1024px;
+    margin: 40px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.content{
+    max-width: 1024px;
+    background-color: var(--secondary-0);
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}

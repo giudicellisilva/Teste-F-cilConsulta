@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fácil Consulta | Cadastro</title>
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style-default.css"> 
+    <link rel="stylesheet" href="css/pages-default-style.css"> 
+    <link rel="stylesheet" href="css/page-01-style.css"> 
+    <link rel="stylesheet" href="css/page-02-style.css"> 
+    <link rel="stylesheet" href="css/page-03-style.css"> 
+    <link rel="stylesheet" href="css/page-04-style.css"> 
+</head>
+<body class="body">
+    <main class="main">
+        <button class="button-voltar" style="display: none;"><</button>
+        <div class="content">
+            <section class="section-formulario">
+                <div class="titles-form">
+                     <h1 class="title-form">Sobre o proficional</h1>
+                     <h2 class="subtitle-form">Dados do Profissional</h2>
+                </div>
+                <form class="form">
+                    <label class="label-form"><h3>Nome completo* </h3><input class="input-form" type="text" name="nome" id="nome" placeholder="Digite o nome completo"></label>
+                    
+                    <label class="label-form"><h3>CPF*</h3> <input class="input-form" type="text" name="cpf" id="cpf" placeholder="Digite um cpf "></label>
+                    
+                    <label class="label-form"><h3>Numero de Celular*</h3> <input class="input-form" type="tel" name="celular" id="celular" placeholder="(00) 0 0000-0000"></label>
+                         
+                    <div class="div-div-form">
+                        <div class="div-form">
+                            <h3 class="label-form">Estado</h3> 
+                            <select class="estado-form input-form" name="estado" id="estado">
+                                <option value="selecione">Selecione</option>
+                                <option value="pernanbuco">Pernanbuco</option>
+                                <option value="alagoas">Alagoas</option>
+                            </select>
+                        </div>
+                        <div class="div-form">
+                            <h3 class="label-form">Cidade*</h3>
+                            <select class="cidade-form input-form" name="cidade" id="cidade" placeholder="Selecione">
+                                <option value="selecione">Selecione</option>
+                                <option style="display:none" class="pe" value="garanhus">Garanhus</option>
+                                <option style="display:none" class="pe" value="recife">Recife</option>
+                                <option style="display:none" class="al" value="penendo">Penedo</option>
+                                <option style="display:none" class="al" value="maceio">Maceio</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                 </form>
+                 <div class="progresso">
+                     <div class="barra-progresso-1 barra-progresso-color-1"></div>
+                     <div class="barra-progresso-2 barra-progresso-color-2"></div>
+                     <p class="text-progresso">1 de 2</p>
+                 </div>
+                 <button class="button-proximo button-default">Próximo</button>
+             </section>
+     
+             <figure class="figure">
+                 <img src="imagens/desktop-pagina-1.png">
+             </figure>
+        </div>
+        <div class="content" style="display: none;">
+            <section class="section-formulario">
+                <div class="titles-form">
+                     <h1 class="title-form">Sobre o atendimento</h1>
+                     <h2 class="subtitle-form">detalhes do atendimento</h2>
+                </div>
+                 <form class="form">
+                    <label class="label-form">Especialidade principal* <input class="input-form" type="drop-down-list" name="especialidade" id="especialidade" placeholder="Selecione a especialidade"></label>
+                    
+                    <label class="label-form">Informe o preço da consulta* <div class="div-span-RS"><span class="span-RS">R$</span><input class="input-form" type="text" name="valor" id="valor" placeholder="Valor"></div></label>
+
+                    <label class="label-form">Formas de pagamento da consulta*
+                        <span class="span-pagamento"><input class="input-form" type="checkbox" name="pix" id="pix" >
+                            <h4>Pix</h4>
+                        </span>
+                        <span class="span-pagamento"><input class="input-form" type="checkbox" name="dinheiro" id="dinheiro">
+                            <h4>Em dinheiro</h4> 
+                        </span>
+                        <span class="span-pagamento-cartao">
+                            <div class="div-pagamento-cartao"><input class="input-form" type="checkbox" name="cartão" id="cartao" placeholder="Cartão de crédito"> 
+                                <h4>Cartão de crédito</h4>
+                            </div>
+                            <div style="display: none;" class="div-pagamento-parcela">
+                                <h4>Parcelamento em</h4>
+                                <div class="div-parcela-divisao">
+                                    <span class="span-parcela-divisao"><input class="input-form" type="radio" name="parcela" id="1x">1x sem juros</span>
+                                    <span class="span-parcela-divisao"><input class="input-form" type="radio" name="parcela" id="2x">2x sem juros</span>
+                                    <span class="span-parcela-divisao"><input class="input-form" type="radio" name="parcela" id="3x">3x sem juros</span>
+                                </div>
+                            </div>
+                        </span>
+                    </label>
+                        
+                </form>
+                 <div class="progresso">
+                     <div class="barra-progresso-1 barra-progresso-color-1"></div>
+                     <div class="barra-progresso-2 barra-progresso-color-1"></div>
+                     <p class="text-progresso">2 de 2</p>
+                 </div>
+                 <button class="button-proximo button-default">Próximo</button>
+             </section>
+     
+             <figure class="figure">
+                 <img src="imagens/desktop-pagina-2.png">
+             </figure>
+        </div>
+        <div class="content" style="display: none;">
+            <section class="section-formulario">
+                <div class="titles-form">
+                    <h1 class="title-form">Revisão de cadastro</h1>
+                </div>
+                 <div class="form dados-form">
+                    <div class="div-dados-form">
+                        <h3 class="label-dados">Nome completo</h3>
+                        <p class="input-dados">João da Silva</p>
+                    </div>
+                    <div>
+                        <h3 class="label-dados">CPF</h2>
+                        <p class="input-dados">174365134619</p>
+                    </div>
+                    <div>
+                        <h3 class="label-dados">Número de celular ou telefone</h2>
+                        <p class="input-dados">174365134619</p>
+                    </div>
+                    <div>
+                        <h3 class="label-dados">Estado/Cidade</h2>
+                        <p class="input-dados">174365134619</p>
+                    </div>
+                    <div>
+                        <h3 class="label-dados">Especialidade principal</h2>
+                        <p class="input-dados">Cardiologista</p>
+                    </div>
+                    <div>
+                        <h3 class="label-dados">Preço da consulta</h3>
+                        <p class="input-dados">R$ 200,00</p>
+                    </div>
+                    <div class="">
+                        <h3 class="label-dados">Formas de pagamento da consulta</h3>
+                        <p class="input-dados">Cartão de crédito</p>
+                    </div>
+                 </div>
+                 <button class="button-default button-cadastrar">Cadastrar Profissional</button>
+                 <button class="button-default button-editar">Editar cadastro</button>
+             </section>
+     
+             <figure class="figure">
+                 <img src="imagens/desktop-pagina-3.png">
+             </figure>
+        </div>
+        <div class="content content-cadastro-realizado" style="display: none;">
+            <div class="cadastro-realizado">
+                <h3 class="cadastro-text">Cadastro concluido!</h3>
+                <img class="img-checkd" src="imagens/checked-svgrepo-com.svg">
+            </div>
+        
+        
+        </div>
+    </main>
+
+    <script type='text/javascript' src='js/page.js'></script>
+    <script type='text/javascript' src='js/cidade-estado.js'></script>
+    <script type='text/javascript' src='js/cartao-parcelas.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
+</body>
+</html>
